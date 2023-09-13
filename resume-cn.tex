@@ -1,0 +1,139 @@
+% !TEX program = xelatex
+
+\documentclass{resume}
+
+\usepackage{lastpage}
+\usepackage{fancyhdr}
+\usepackage{linespacing_fix} % disable extra space before next section
+\usepackage[fallback]{xeCJK}
+
+\setCJKfallbackfamilyfont{}{STSong}
+
+\begin{document}
+% \pagestyle{fancy}
+% \fancyhf{}
+\renewcommand\headrulewidth{0pt}
+% \cfoot{\thepage\ of \pageref{LastPage}}
+
+\name{严懿宸}
+
+\basicInfo{
+  \email{oraluben@outlook.com} \textperiodcentered\ 
+  % \phone{(+86) 189-1807-5127} \textperiodcentered\
+  \github[oraluben]{https://github.com/oraluben}
+}
+
+\section{工作经历}
+\datedsubsection{\textbf{阿里云} ，上海}{2022.03 -- 现在}
+\role{高级工程师}{针对架构的通用优化及CPython/Node.js 运行时优化}
+% \begin{itemize}
+%   \item{\url{https://github.com/alibaba/code-data-share-for-python}}
+% \end{itemize}
+
+\datedsubsection{\textbf{Oracle Labs} ，苏黎世，瑞士}{2020.09 -- 2021.02}
+\role{实习}{Loom support for Graal Native Image (AOT compilation of coroutine in Java)}
+\begin{itemize}
+  \item{\url{https://github.com/oracle/graal/commits?author=oraluben}}
+\end{itemize}
+
+\datedsubsection{\textbf{PingCAP} ，远程}{2020.06 -- 2020.08, 2021.05 -- 2021.07}
+\role{实习}{基于Fuzz技术提升TiDB数据库的可靠性。}
+\begin{itemize}
+	\item{设计并实现针对配置项的Fuzz工具Matrix。(2020)}
+	\item{探索基于Fuzz技术测试TiDB SQL层的方法。(2021)}
+\end{itemize}
+
+\datedsubsection{\textbf{苏黎世联邦理工} ，苏黎世，瑞士}{2019.05 -- 2019.12}
+\role{访问学生}{在Zhendong Su教授的指导下进行程序语言以及测试的研究。}
+\begin{itemize}
+	\item{2019秋季编译原理课程助教。}
+\end{itemize}
+
+%\datedsubsection{\textbf{Splunk}，上海}{2017.07 -- 2018.01}
+%\role{实习}{Performance Team}
+%\begin{itemize}
+%  \item{负责一部分功能开发以及测试用例编写；}
+%  \item{引入基于覆盖率的单元/集成测试，发现了多个严重bug。}
+%\end{itemize}
+
+%\datedsubsection{\textbf{Intel}，上海}{2015.06 -- 2016.09}
+%\role{实习}{参与iLab的开发。iLab是Intel内部的一个基于Web的私有云系统。}
+%\begin{itemize}
+%  \item{参与Web/SDK的功能开发与修复；}
+%  \item{设计了一个基于ActiveMQ的服务器通信协议，用于替代原有的RPC。}
+%\end{itemize}
+
+\section{教育经历}
+\datedsubsection{\textbf{华东师范大学}，上海}{2017.09 -- 2022.03}
+  工学硕士学位，专业：软件工程
+
+\datedsubsection{\textbf{华东师范大学}，上海}{2013.09 -- 2017.06}
+  工学学士学位，专业：软件工程
+
+\section{项目}
+% \datedsubsection{\textbf{Matrix}}{\url{https://github.com/chaos-mesh/matrix}}
+% \role{Golang}{Matrix是一个根据特定DSL生成符合条件的配置文件进行模糊测试的工具。}
+% \begin{itemize}
+%   \item{根据需求设计DSL；}
+%   \item{基于Golang实现工具。}
+% \end{itemize}
+
+\datedsubsection{\textbf{MC Fuzz}}{\url{https://tingsu.github.io/files/fse19-MCFuzz.pdf}}
+\role{Python / C++ / Clang / Docker}{设计并实现了基于fuzzing的模型检查工具测试工具MC Fuzz。该工具以通用C程序作为输入，输出可以有效测试模型检查工具的代码。}
+\begin{itemize}
+\item{架构设计良好且易于扩展至不同的fuzzing策略/待测工具；}
+\item{基于Docker的环境隔离。}
+\end{itemize}
+
+\datedsubsection{\textbf{Voile}}{\url{https://github.com/owo-lang/voile-rs}}
+\role{Rust}{Voile是一个依赖类型（Dependent type）的编程语言，支持原生的Sum/Record以及Row polymorphism。}
+\begin{itemize}
+  \item{依赖类型的类型检查（Dependent type-checking）；}
+  \item{隐式参数的检查（Implicit argument checking）。}
+\end{itemize}
+
+% Reference Test
+%\datedsubsection{\textbf{Paper Title\cite{zaharia2012resilient}}}{May. 2015}
+%An xxx optimized for xxx\cite{verma2015large}
+%\begin{itemize}
+%  \item main contribution
+%\end{itemize}
+
+%% \section{\faHeartO\ 成就}
+%% \datedline{}{Aug. 2017}
+
+\section{技能}
+\begin{itemize}[parsep=0.25ex]
+  \item \textbf{编程语言}:
+    熟悉Python，较为熟悉 C++/C\#/Java/Rust/OCaml/Go。
+
+  % compiler theories
+  \item \textbf{编译器}:
+    熟悉编译器相关知识，有GraalVM和基于Clang/LLVM工具链开发的经历。
+  
+  \item \textbf{开发经历}:
+    开发经验丰富，包括Web应用（Angular/Vue/PHP/Python），多种功能的客户端应用和在线游戏（WebSocket，HTML5）。
+    
+  \item \textbf{开发工具}:
+    熟悉Git工作流，有包括YouTrack，Jira，Github等在内的项目管理工具的经验。熟悉Jetbrains，Visual Studio等IDE的使用。
+  
+  \item \textbf{交流与合作}:
+    能够用英语进行流利的沟通，乐于与他人进行合作。
+%
+%  \item \textbf{软件开发}:
+%    有能力发现并选择合适的方式解决开发过程中的问题。
+\end{itemize}
+
+\section{其他}
+\begin{itemize}[parsep=0.25ex]
+  \item 开源贡献：向GraalVM, LLVM/Clang, Python等项目提交过代码。
+\end{itemize}
+
+\section{论文}
+\input{pubs.tex}
+
+%% Reference
+%\newpage
+%\bibliographystyle{IEEETran}
+%\bibliography{mycite}
+\end{document}

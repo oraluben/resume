@@ -1,0 +1,129 @@
+% !TEX program = xelatex
+
+\documentclass{resume}
+
+% \usepackage{lastpage}
+% \usepackage{fancyhdr}
+\usepackage{linespacing_fix} % disable extra space before next section
+
+\begin{document}
+% \pagestyle{fancy}
+% \fancyhf{}
+% \renewcommand\headrulewidth{0pt}
+% \cfoot{\thepage\ of \pageref{LastPage}}
+
+\name{Yichen Yan}
+
+\basicInfo{
+  \email{oraluben@outlook.com} \textperiodcentered\ 
+  \phone{(+86) 189-1807-5127} \textperiodcentered\
+  \github[oraluben]{https://github.com/oraluben}
+}
+
+\section{Work Experience}
+\datedsubsection{\textbf{Alibaba Cloud}, Shanghai}{03/2022 -- now}
+\role{Senior Engineer}{Runtime optimization for CPython/Node.js and architecture-specific optimization}
+% \begin{itemize}
+%   \item{\url{https://github.com/alibaba/code-data-share-for-python}}
+% \end{itemize}
+
+\datedsubsection{\textbf{Oracle Labs}, Zurich, Switzerland}{09/2020 -- 02/2021}
+\role{Student Intern}{Loom support for Graal Native Image (AOT compilation of coroutine in Java)}
+\begin{itemize}
+	\item{\url{https://github.com/oracle/graal/commits?author=oraluben}}
+\end{itemize}
+
+\datedsubsection{\textbf{PingCAP}, remote}{06/2020 -- 08/2020, 05/2021 -- 07/2021}
+\role{Intern}{Improve stability of TiDB with fuzzing-based approaches.}
+\begin{itemize}
+	\item{Design and implement a configuration-oriented fuzzing tool Matrix. (2020)}
+	\item{Introduce state-of-the-art fuzzing approaches to test SQL layer of TiDB. (2021)}
+\end{itemize}
+
+\datedsubsection{\textbf{ETH Zurich} Zurich, Switzerland}{05/2019 -- 12/2019}
+\role{Visiting Student}{Research in programming language and testing in Prof. Zhendong Su's group.}
+\begin{itemize}
+	\item{TA of Compiler Design, fall 2019.}
+\end{itemize}
+
+% \datedsubsection{\textbf{Splunk} Shanghai, China}{07/2017 -- 01/2018}
+% \role{Intern}{Working in performance group.}
+% \begin{itemize}
+%   \item{Responsible for a part of feature and test case developing.}
+%   \item{Introduce coverage-based unit/integration test, which helped to find serious bugs.}
+% \end{itemize}
+
+%\datedsubsection{\textbf{Intel} Shanghai, China}{06/2015 -- 09/2016}
+%\role{Intern}{Working on iLab, a web-based private cloud platform globally used in Intel.}
+%\begin{itemize}
+%  \item{Responsible for a part of feature developing and bug fix for web and SDK.}
+%  \item{Developed a POC of server communication protocol based on ActiveMQ.}
+%\end{itemize}
+
+\section{Education}
+\datedsubsection{\textbf{East China Normal University}, Shanghai, China}{09/2017 -- 03/2022}
+\textit{M.S.} in Software Engineering (SE)
+\datedsubsection{\textbf{East China Normal University}, Shanghai, China}{09/2013 -- 06/2017}
+\textit{B.S.} in Software Engineering (SE)
+
+\section{Projects}
+% \datedsubsection{\textbf{Matrix}}{\url{https://github.com/chaos-mesh/matrix}}
+% \role{Golang}{Matrix is a fuzz-testing tool targeting configurations that generate config files based on a DSL.}
+% \begin{itemize}
+% 	\item{Design DSL based on requirement;}
+% 	\item{Implement with Golang}
+% \end{itemize}
+
+\datedsubsection{\textbf{MC Fuzz}}{\url{https://tingsu.github.io/files/fse19-MCFuzz.pdf}}
+\role{Python / C++ / Clang / Docker}{Design and implement MCFuzz to fuzz and test Model Checkers. The tool takes a general C source code to generate test cases for model checker.}
+\begin{itemize}
+  \item{Well designed and easy to extend to other fuzzing strategy/model checkers.}
+  \item{Docker based isolation.}
+\end{itemize}
+
+\datedsubsection{\textbf{Voile}}{\url{https://github.com/owo-lang/voile-rs}}
+\role{Rust}{Voile is a dependently-typed programming language features in first-class sums and records.}
+\begin{itemize}
+  \item{Dependent type-checking;}
+  \item{Implicit argument checking.}
+\end{itemize}
+
+\section{Skills}
+\begin{itemize}[parsep=0.25ex]
+  \item \textbf{Programming Languages}:
+    Experienced in Python, confortable with C++/C\#/Java/Rust/OCaml/Go.
+
+  \item \textbf{Compilers}:
+    Solid knowledge of compiler, familiar with GraalVM and Clang/LLVM toolchain.
+  
+  \item \textbf{Developing Experience}:
+    Have experience with various type of projects, including but not limited to web (Angular/Vue/PHP/Python), client-side program for different perpous and online game (WebSocket, HTML5).
+
+  \item \textbf{Developing Tools}:
+    Familiar with git workflow and have experience with team tools like YouTrack, Jira, GitHub.
+    % Also experienced with IDEs, e.g. Jetbrains, Visual Studio (Code) and Eclipse.
+  
+  \item \textbf{Programming Style}:
+    Experienced in writing well-documented or easy-understanded code.
+  
+  \item \textbf{Language and Communication}:
+    Fluent in English, and willing to cooperate with others in team.
+  
+  \item \textbf{Problem Solving}:
+    Able to identify and solve problems in computer science and programming fields.
+\end{itemize}
+
+\section{Miscellaneous}
+\begin{itemize}[parsep=0.25ex]
+  \item Opensource Contribution: contributed to Graal, LLVM/Clang, Python and some other projects.
+\end{itemize}
+
+\section{Publications}
+\input{pubs.tex}
+
+%% Reference
+%\newpage
+%\bibliographystyle{IEEETran}
+%\bibliography{mycite}
+\end{document}
+
